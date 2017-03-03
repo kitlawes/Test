@@ -1,15 +1,14 @@
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        printRepositories(1, 100);
+//        printRepositories(1, 100);
+        getTopicsOfRepositoriesMostRecentlyUpdateWith1000OrMoreStars();
     }
 
     /*
@@ -52,4 +51,56 @@ public class Main {
             }
         }
     }
+
+    static void getTopicsOfRepositoriesMostRecentlyUpdateWith1000OrMoreStars() {
+
+        Set<String> topics = new HashSet<String>();
+        ArrayList<Integer> pages = new ArrayList<Integer>();
+        for (int i = 1; i <= 100; i++) {
+            pages.add(i);
+        }
+
+        while (!pages.isEmpty()) {
+            try {
+
+                int page = pages.get(0);
+                URL repositoriesUrl = new URL("https://github.com/search?o=desc&p=" + page + "&q=stars%3A%3E%3D1000&ref=searchresults&s=updated&type=Repositories&utf8=%E2%9C%93");
+                BufferedReader reader = new BufferedReader(new InputStreamReader(repositoriesUrl.openStream(), "UTF-8"));
+                System.out.println(page);
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    if (line.contains("/search?q=topic%3A") && line.contains("+org%3A")) {
+                        int beginIndex = line.indexOf("/search?q=topic%3A") + "/search?q=topic%3A".length();
+                        int endIndex = line.indexOf("+org%3A");
+                        String substring = line.substring(beginIndex, endIndex);
+                        topics.add(substring);
+                        System.out.println(substring);
+                    }
+                }
+                System.out.println();
+                pages.remove(0);
+
+            } catch (MalformedURLException e) {
+                sleepForTenSeconds();
+            } catch (UnsupportedEncodingException e) {
+                sleepForTenSeconds();
+            } catch (IOException e) {
+                sleepForTenSeconds();
+            }
+        }
+
+        for (String topic : topics) {
+            System.out.println(topic);
+        }
+
+    }
+
+    static void sleepForTenSeconds() {
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e1) {
+            e1.printStackTrace();
+        }
+    }
+
 }
