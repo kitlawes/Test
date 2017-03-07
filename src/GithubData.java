@@ -5,7 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.*;
 
-public class Main {
+public class GithubData {
 
     public static void main(String[] args) {
 //        printRepositories(1, 100);
@@ -126,7 +126,7 @@ public class Main {
     static List<String> getTopicsFromFile() {
         List<String> topics = new ArrayList<>();
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("src/topics.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("src/github_topics.txt"));
             String line;
             while ((line = reader.readLine()) != null) {
                 topics.add(line);
