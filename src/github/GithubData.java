@@ -1,3 +1,5 @@
+package github;
+
 import org.json.JSONObject;
 
 import java.io.*;
@@ -138,7 +140,6 @@ public class GithubData {
         }
         return topics;
     }
-
 
     static void addPopularityOfNextTopic(HashMap<String, Integer> popularity, List<String> topics) {
         try {
