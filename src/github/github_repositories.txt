@@ -1,0 +1,119 @@
+repository: https://github.com/grappa-py/grappa
+issues: 6
+commits: 59
+lines: 8459
+
+repository: https://github.com/IQSS/social_science_software_toolkit
+issues: 3
+commits: 17
+lines: 233
+
+repository: https://github.com/dernorberto/openhab
+issues: 2
+commits: 57
+lines: 936
+
+repository: https://github.com/choria-io/puppet-nats
+issues: 2
+commits: 32
+lines: 1418
+
+repository: https://github.com/illus0r/dianov.org
+issues: 5
+commits: 0
+lines: 0
+
+repository: https://github.com/swraife/guitoire
+issues: 41
+commits: 145
+lines: 9176
+
+repository: https://github.com/jbienia/Food_Share
+issues: 1
+commits: 4
+lines: 2460
+
+repository: https://github.com/uranum/yii2-delivery-calculator
+issues: 2
+commits: 14
+lines: 8548
+
+repository: https://github.com/antwarjs/antwarjs.github.io
+issues: 1
+commits: 27
+lines: 2
+
+repository: https://github.com/byu-oit-appdev/aws-credential-detector
+issues: 1
+commits: 38
+lines: 947
+
+repository: https://github.com/openvswitch/ovn-kubernetes
+issues: 8
+commits: 163
+lines: 9506
+
+repository: https://github.com/Crocmagnon/django-refunds
+issues: 1
+commits: 50
+lines: 1217
+
+repository: https://github.com/sunnych0214/EditTextText1
+issues: 1
+commits: 4
+lines: 1235
+
+repository: https://github.com/LatitudeEngineering/flight_analysis_tools
+issues: 1
+commits: 75
+lines: 7015
+
+repository: https://github.com/SouthAfricaDigitalScience/fitsio-deploy
+issues: 1
+commits: 15
+lines: 378
+
+repository: https://github.com/Wremnroat/http-luxmuscle.com-muscle-boost-x-reviews-
+issues: 1
+commits: 0
+lines: 0
+
+repository: https://github.com/CIS101-PaceU/reporting
+issues: 11
+commits: 9
+lines: 178
+
+repository: https://github.com/apache/spark-website
+issues: 4
+commits: 0
+lines: 0
+
+repository: https://github.com/harvard-lil/website-static
+issues: 9
+commits: 0
+lines: 0
+
+repository: https://github.com/behnaaz/extendedcoloring
+issues: 4
+commits: 71
+lines: 6535
+
+repository: https://github.com/segmentio/analytics-c
+issues: 3
+commits: 6
+lines: 842
+
+repository: https://github.com/jmn756/PocketErnest
+issues: 1
+commits: 7
+lines: 2601
+
+repository: https://github.com/deshboard/boilerplate-grpc-service
+issues: 1
+commits: 106
+lines: 1401
+
+repository: https://github.com/jpuri/draftjs-to-markdown
+issues: 2
+commits: 21
+lines: 4821

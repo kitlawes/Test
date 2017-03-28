@@ -19,8 +19,8 @@ public class GithubData {
 //        orderTopicsByPopularity();
 
         // Methods for finding repositories with specific characteristics
-        printRepositoriesWithMinIssues(1);
-//        printRepositoriesWithMinIssuesMaxCommitsMaxLines(1, 200, 10000);
+//        printRepositoriesWithMinIssues(1);
+        printRepositoriesWithMinIssuesMaxCommitsMaxLines(1, 200, 10000);
 
     }
 
@@ -235,27 +235,27 @@ public class GithubData {
             List<String> repositoryUrls = getRepositoryUrlsForPage(page);
             for (String repositoryUrl : repositoryUrls) {
                 int issues = getIssuesForRepository(repositoryUrl);
-                System.out.println("repository: " + repositoryUrl);
-                System.out.println("issues: " + issues);
+//                System.out.println("repository: " + repositoryUrl);
+//                System.out.println("issues: " + issues);
                 if (issues >= minIssues) {
                     List<String> commits = getCommitsForRepository(repositoryUrl, maxCommits);
                     if (commits.size() <= maxCommits) {
-                        System.out.println("commits: " + commits.size());
+//                        System.out.println("commits: " + commits.size());
                         int lines = getLinesForRepository(repositoryUrl, commits, maxLines);
                         if (lines <= maxLines) {
-//                            System.out.println("repository: " + repositoryUrl);
-//                            System.out.println("issues: " + issues);
-//                            System.out.println("commits: " + commits.size());
+                            System.out.println("repository: " + repositoryUrl);
+                            System.out.println("issues: " + issues);
+                            System.out.println("commits: " + commits.size());
                             System.out.println("lines: " + lines);
-//                            System.out.println();
+                            System.out.println();
                         } else {
-                            System.out.println("lines: " + lines + "+");
+//                            System.out.println("lines: " + lines + "+");
                         }
                     } else {
-                        System.out.println("commits: " + commits.size() + "+");
+//                        System.out.println("commits: " + commits.size() + "+");
                     }
                 }
-                System.out.println();
+//                System.out.println();
             }
         }
     }
@@ -313,7 +313,7 @@ public class GithubData {
         int commitsSize = 0;
         while (commits.size() > commitsSize) {
             commitsSize = commits.size();
-            System.out.println("commits so far: " + commitsSize);
+//            System.out.println("commits so far: " + commitsSize);
             if (commitsSize > maxCommits) {
                 return commits;
             }
@@ -350,7 +350,7 @@ public class GithubData {
         int linesOfCode = 0;
         for (String commit : commits) {
             linesOfCode += getLinesForCommit(repositoryUrl + "/commit/" + commit);
-            System.out.println("lines so far: " + linesOfCode);
+//            System.out.println("lines so far: " + linesOfCode);
             if (linesOfCode > maxLines) {
                 return linesOfCode;
             }
