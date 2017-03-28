@@ -18,8 +18,9 @@ public class GithubData {
 //        getTopicsOfRepositoriesMostRecentlyUpdateWith1000OrMoreStars();
 //        orderTopicsByPopularity();
 
-        // Method for finding repositories with specific characteristics
-        printRepositoriesWithMinIssuesMaxCommitsMaxLines(1, 200, 10000);
+        // Methods for finding repositories with specific characteristics
+        printRepositoriesWithMinIssues(1);
+//        printRepositoriesWithMinIssuesMaxCommitsMaxLines(1, 200, 10000);
 
     }
 
@@ -212,6 +213,20 @@ public class GithubData {
             Thread.sleep(10000);
         } catch (InterruptedException e1) {
             e1.printStackTrace();
+        }
+    }
+
+    static void printRepositoriesWithMinIssues(int minIssues) {
+        for (int page = 1; page <= 100; page++) {
+            List<String> repositoryUrls = getRepositoryUrlsForPage(page);
+            for (String repositoryUrl : repositoryUrls) {
+                int issues = getIssuesForRepository(repositoryUrl);
+                if (issues >= minIssues) {
+                    System.out.println("repository: " + repositoryUrl);
+                    System.out.println("issues: " + issues);
+                    System.out.println();
+                }
+            }
         }
     }
 
