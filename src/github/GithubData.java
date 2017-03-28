@@ -1,5 +1,7 @@
 package github;
 
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import org.json.JSONObject;
 
 import java.io.*;
@@ -10,9 +12,15 @@ import java.util.*;
 public class GithubData {
 
     public static void main(String[] args) {
+
+        // Methods for finding the popularity of topics
 //        printRepositories(1, 100);
 //        getTopicsOfRepositoriesMostRecentlyUpdateWith1000OrMoreStars();
-        orderTopicsByPopularity();
+//        orderTopicsByPopularity();
+
+        // Method for finding repositories with specific characteristics
+        printRepositoriesWithMinIssuesMaxCommitsMaxLines(1, 200, 10000);
+
     }
 
     /*
@@ -205,6 +213,169 @@ public class GithubData {
         } catch (InterruptedException e1) {
             e1.printStackTrace();
         }
+    }
+
+    static void printRepositoriesWithMinIssuesMaxCommitsMaxLines(int minIssues, int maxCommits, int maxLines) {
+        for (int page = 1; page <= 100; page++) {
+            List<String> repositoryUrls = getRepositoryUrlsForPage(page);
+            for (String repositoryUrl : repositoryUrls) {
+                int issues = getIssuesForRepository(repositoryUrl);
+                System.out.println("repository: " + repositoryUrl);
+                System.out.println("issues: " + issues);
+                if (issues >= minIssues) {
+                    List<String> commits = getCommitsForRepository(repositoryUrl, maxCommits);
+                    if (commits.size() <= maxCommits) {
+                        System.out.println("commits: " + commits.size());
+                        int lines = getLinesForRepository(repositoryUrl, commits, maxLines);
+                        if (lines <= maxLines) {
+//                            System.out.println("repository: " + repositoryUrl);
+//                            System.out.println("issues: " + issues);
+//                            System.out.println("commits: " + commits.size());
+                            System.out.println("lines: " + lines);
+//                            System.out.println();
+                        } else {
+                            System.out.println("lines: " + lines + "+");
+                        }
+                    } else {
+                        System.out.println("commits: " + commits.size() + "+");
+                    }
+                }
+                System.out.println();
+            }
+        }
+    }
+
+    static List<String> getRepositoryUrlsForPage(int page) {
+        List<String> repositoryUrls = new ArrayList<String>();
+        try {
+            URL url = new URL("https://github.com/search?o=desc&p=" + page + "&q=pushed%3A%3E2017-01-01&s=updated&type=Repositories&utf8=%E2%9C%93");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (line.contains("class=\"v-align-middle\">")) {
+                    int beginIndex = line.indexOf("class=\"v-align-middle\">") + "class=\"v-align-middle\">".length();
+                    int endIndex = line.indexOf("</a>");
+                    String substring = line.substring(beginIndex, endIndex);
+                    repositoryUrls.add("https://github.com/" + substring);
+                }
+            }
+        } catch (MalformedURLException e) {
+            sleepForTenSeconds();
+        } catch (UnsupportedEncodingException e) {
+            sleepForTenSeconds();
+        } catch (IOException e) {
+            sleepForTenSeconds();
+        }
+        return repositoryUrls;
+    }
+
+    static int getIssuesForRepository(String repositoryUrl) {
+        try {
+            URL url = new URL(repositoryUrl);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (line.contains("<span class=\"counter\">")) {
+                    int beginIndex = line.indexOf("<span class=\"counter\">") + "<span class=\"counter\">".length();
+                    int endIndex = line.indexOf("</span>");
+                    String substring = line.substring(beginIndex, endIndex);
+                    int issues = Integer.parseInt(substring);
+                    return issues;
+                }
+            }
+        } catch (MalformedURLException e) {
+            sleepForTenSeconds();
+        } catch (UnsupportedEncodingException e) {
+            sleepForTenSeconds();
+        } catch (IOException e) {
+            sleepForTenSeconds();
+        }
+        return 0;
+    }
+
+    static List<String> getCommitsForRepository(String repositoryUrl, int maxCommits) {
+        List<String> commits = getCommitsForUrl(repositoryUrl + "/commits/master", repositoryUrl);
+        int commitsSize = 0;
+        while (commits.size() > commitsSize) {
+            commitsSize = commits.size();
+            System.out.println("commits so far: " + commitsSize);
+            if (commitsSize > maxCommits) {
+                return commits;
+            }
+            commits.addAll(getCommitsForUrl(repositoryUrl + "/commits/master?after=" + commits.get(0) + "+" + (commits.size() - 1), repositoryUrl));
+        }
+        return commits;
+    }
+
+    static List<String> getCommitsForUrl(String commitsUrl, String repositoryUrl) {
+        List<String> commits = new ArrayList<String>();
+        try {
+            URL url = new URL(commitsUrl);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (line.contains(repositoryUrl.substring("https://github.com".length()) + "/commit/") && line.contains("\" class=\"sha btn btn-outline BtnGroup-item\">")) {
+                    int beginIndex = line.indexOf(repositoryUrl.substring("https://github.com".length()) + "/commit/") + (repositoryUrl.substring("https://github.com".length()) + "/commit/").length();
+                    int endIndex = line.indexOf("\" class=\"sha btn btn-outline BtnGroup-item\">");
+                    String substring = line.substring(beginIndex, endIndex);
+                    commits.add(substring);
+                }
+            }
+        } catch (MalformedURLException e) {
+            sleepForTenSeconds();
+        } catch (UnsupportedEncodingException e) {
+            sleepForTenSeconds();
+        } catch (IOException e) {
+            sleepForTenSeconds();
+        }
+        return commits;
+    }
+
+    static int getLinesForRepository(String repositoryUrl, List<String> commits, int maxLines) {
+        int linesOfCode = 0;
+        for (String commit : commits) {
+            linesOfCode += getLinesForCommit(repositoryUrl + "/commit/" + commit);
+            System.out.println("lines so far: " + linesOfCode);
+            if (linesOfCode > maxLines) {
+                return linesOfCode;
+            }
+        }
+        return linesOfCode;
+    }
+
+    static int getLinesForCommit(String commitUrl) {
+        try {
+            URL url = new URL(commitUrl);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
+            String line;
+            int linesForCommit = 0;
+            while ((line = reader.readLine()) != null) {
+                linesForCommit += getLinesForLine(line, "addition");
+                linesForCommit += getLinesForLine(line, "additions");
+                linesForCommit -= getLinesForLine(line, "deletion");
+                linesForCommit -= getLinesForLine(line, "deletions");
+                if (line.contains(" deletion</strong>") || line.contains(" deletions</strong>")) {
+                    return linesForCommit;
+                }
+            }
+        } catch (MalformedURLException e) {
+            sleepForTenSeconds();
+        } catch (UnsupportedEncodingException e) {
+            sleepForTenSeconds();
+        } catch (IOException e) {
+            sleepForTenSeconds();
+        }
+        return 0;
+    }
+
+    static int getLinesForLine(String line, String qualifier) {
+        if (line.contains(" " + qualifier + "</strong>")) {
+            int beginIndex = line.indexOf("<strong>") + "<strong>".length();
+            int endIndex = line.indexOf(" " + qualifier + "</strong>");
+            String substring = line.substring(beginIndex, endIndex);
+            return Integer.parseInt(substring.replace(",", ""));
+        }
+        return 0;
     }
 
 }
