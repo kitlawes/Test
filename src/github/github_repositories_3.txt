@@ -1,247 +1,186 @@
-Repositories with at least 1 issue
+Repositories with at least 1 issue, at most 200 commits, and at most 10000 lines of code
 
-repository: https://github.com/randsleadershipslack/statistics
-issues: 2
-
-repository: https://github.com/theforeman/foreman_remote_execution
+repository: https://github.com/songjein/AsterixDB_Web_Console
 issues: 8
+commits: 76
+lines: 2298
 
-repository: https://github.com/keum/data_display
-issues: 1
-
-repository: https://github.com/WGNHS/LSLC-Web-App
-issues: 9
-
-repository: https://github.com/vertebrae-org/node-cassandra
-issues: 5
-
-repository: https://github.com/ieer/projector-rpi-web-service
-issues: 3
-
-repository: https://github.com/wunderkraut/WunderTools
-issues: 21
-
-repository: https://github.com/korcankaraokcu/PINCE
-issues: 9
-
-repository: https://github.com/maggu2810/maggu2810-overlay
-issues: 1
-
-repository: https://github.com/magne4000/quassel-webserver
-issues: 16
-
-repository: https://github.com/openSUSE/software-o-o
-issues: 28
-
-repository: https://github.com/zalando-incubator/flatjson
-issues: 1
-
-repository: https://github.com/redbrick/eduScripts
-issues: 1
-
-repository: https://github.com/origamicomet/yeti
-issues: 32
-
-repository: https://github.com/mylhyl/AndroidSuperDialog
+repository: https://github.com/elierotenberg/react-nexus
 issues: 2
+commits: 75
+lines: 6013
 
-repository: https://github.com/rilwis/meta-box
-issues: 56
+repository: https://github.com/bigxodus/candlelight
+issues: 7
+commits: 59
+lines: 2939
 
-repository: https://github.com/zachgarwood/elixir-amazon-product-advertising-client
-issues: 1
-
-repository: https://github.com/infobloxopen/policy-box
-issues: 1
-
-repository: https://github.com/easylist/easylist
-issues: 79
-
-repository: https://github.com/OpenGamePanel/OGP-Website
-issues: 1
-
-repository: https://github.com/BakermanLP/ProjectRET-AoT
-issues: 24
-
-repository: https://github.com/ax5ui/ax5ui-kernel
-issues: 2
-
-repository: https://github.com/uranum/yii2-delivery-calculator
-issues: 1
-
-repository: https://github.com/Bedework/bw-carddav
-issues: 1
-
-repository: https://github.com/bashalex/datapot
-issues: 1
-
-repository: https://github.com/subutai-io/jenkins-config
-issues: 1
-
-repository: https://github.com/ongr-io/TranslationsBundle
-issues: 10
-
-repository: https://github.com/cocos-creator/engine
-issues: 21
-
-repository: https://github.com/mekatronik-achmadi/my_example
-issues: 1
-
-repository: https://github.com/nidium/Nidium
-issues: 19
-
-repository: https://github.com/okuoku/yunibase
-issues: 17
-
-repository: https://github.com/cu-mkp/GR8975
-issues: 38
-
-repository: https://github.com/qloog/laravel5-backend
-issues: 8
-
-repository: https://github.com/sunnych0214/EditTextText1
-issues: 1
-
-repository: https://github.com/phillymesh/cjdns-optimizations
-issues: 2
-
-repository: https://github.com/RallyCommunity/PSITrackingApp
+repository: https://github.com/Duckers/WeatherTodo
 issues: 13
+commits: 97
+lines: 3594
 
-repository: https://github.com/Voog/design-rotterdam
-issues: 38
-
-repository: https://github.com/hyrise/hyrise
-issues: 60
-
-repository: https://github.com/fabiovalse/KGUI
-issues: 8
-
-repository: https://github.com/AJNOURI/COA
-issues: 17
-
-repository: https://github.com/mekatronik-achmadi/my_example
-issues: 1
-
-repository: https://github.com/takezoe/golc
+repository: https://github.com/Nebo15/ehealth.api
 issues: 3
+commits: 58
+lines: 1734
 
-repository: https://github.com/binarymaster/3WiFi
-issues: 2
-
-repository: https://github.com/parapluu/nifty
-issues: 1
-
-repository: https://github.com/pacifica/pacifica-cartd
-issues: 1
-
-repository: https://github.com/openXsensor/openXsensor
-issues: 2
-
-repository: https://github.com/mekatronik-achmadi/my_example
-issues: 1
-
-repository: https://github.com/OpenSecEd/usability
-issues: 7
-
-repository: https://github.com/OpenSecEd/trustcomp
-issues: 7
-
-repository: https://github.com/cloudfoundry/bosh-deployment
-issues: 5
-
-repository: https://github.com/CaptainPotatoes/EEG_ADS1299_Firmware
-issues: 2
-
-repository: https://github.com/amite/arc
+repository: https://github.com/pixiephreak/GWCB_project-1
 issues: 9
+commits: 28
+lines: 1208
 
-repository: https://github.com/yunwuxin/think-notification
+repository: https://github.com/bitwarden/cli
 issues: 1
+commits: 0
+lines: 0
 
-repository: https://github.com/rainwoodman/pmesh
+repository: https://github.com/jokeyrhyme/is-dom4-supported
+issues: 1
+commits: 35
+lines: 2213
+
+repository: https://github.com/wifeofvillon/tokatonton
+issues: 1
+commits: 27
+lines: 2195
+
+repository: https://github.com/claymccoy/reactionTest
 issues: 2
+commits: 0
+lines: 0
 
-repository: https://github.com/PeterTillema/ICE
+repository: https://github.com/ZabuzaW/Sparkle
+issues: 1
+commits: 31
+lines: 7843
+
+repository: https://github.com/carono/yii2-rbac
+issues: 1
+commits: 25
+lines: 1736
+
+repository: https://github.com/kazupon/vue-node-boilerplate
+issues: 2
+commits: 13
+lines: 5910
+
+repository: https://github.com/canonical-websites/conjure-up.io
+issues: 1
+commits: 41
+lines: 2191
+
+repository: https://github.com/guillaumev/drupdate
+issues: 1
+commits: 17
+lines: 964
+
+repository: https://github.com/brendaniel/manifesto
+issues: 1
+commits: 53
+lines: 1288
+
+repository: https://github.com/Floern/stackoverflow
+issues: 2
+commits: 25
+lines: 718
+
+repository: https://github.com/Komodo/komodo-go
 issues: 3
+commits: 81
+lines: 2120
 
-repository: https://github.com/AnyMarket/magento
-issues: 2
-
-repository: https://github.com/natsnudasoft/RgbLedSequencer
+repository: https://github.com/gus3000/DDLarbin
 issues: 1
+commits: 3
+lines: 717
 
-repository: https://github.com/LiskHQ/lisk-docker
-issues: 1
-
-repository: https://github.com/shubham9411/autonomous
-issues: 6
-
-repository: https://github.com/GreyWolfDev/Werewolf
-issues: 16
-
-repository: https://github.com/scaleway/image-tools
-issues: 19
-
-repository: https://github.com/praekelt/molo-freebasics
-issues: 6
-
-repository: https://github.com/pangudashu/php7-internal
-issues: 2
-
-repository: https://github.com/rdfio/RDFIO
-issues: 6
-
-repository: https://github.com/synapse-studio/synhelper
-issues: 1
-
-repository: https://github.com/open-mpi/hwloc
-issues: 76
-
-repository: https://github.com/joereddington/Vision
+repository: https://github.com/dallasrb/dallasrb.github.io
 issues: 4
+commits: 38
+lines: 954
 
-repository: https://github.com/apazureck/openui5vscodeTypescriptTools
-issues: 13
-
-repository: https://github.com/jvns/jvns.ca
+repository: https://github.com/Holmistr/jirafa-jenkins-plugin
 issues: 1
+commits: 6
+lines: 1738
 
-repository: https://github.com/adsamcik/Signals-android
-issues: 14
+repository: https://github.com/NINAnor/NOFAInsert
+issues: 6
+commits: 65
+lines: 7429
 
-repository: https://github.com/ITNano/WikiSubtitleReader
+repository: https://github.com/MaitriMehta/TipCalculator
+issues: 1
+commits: 18
+lines: 1375
+
+repository: https://github.com/ConSol/omd
+issues: 2
+commits: 0
+lines: 0
+
+repository: https://github.com/suredone/qdone
+issues: 4
+commits: 25
+lines: 2211
+
+repository: https://github.com/apache/spark-website
+issues: 4
+commits: 0
+lines: 0
+
+repository: https://github.com/cvgellhorn/SlimFit
 issues: 3
+commits: 188
+lines: 2289
 
-repository: https://github.com/imsweb/data-generator
-issues: 2
-
-repository: https://github.com/forkinthecode/snitchhunt
-issues: 2
-
-repository: https://github.com/hfreire/pollmommy
+repository: https://github.com/LeonardoRiselli/esame_parte_I
 issues: 1
+commits: 2
+lines: 8
 
-repository: https://github.com/mibuthu/wp-event-list
-issues: 35
-
-repository: https://github.com/nkinsky/ImageCamp
+repository: https://github.com/vdsabev/image-downloader
 issues: 7
+commits: 79
+lines: 1511
 
-repository: https://github.com/Osspial/derin-rs
+repository: https://github.com/ryym/vim-riot
 issues: 1
+commits: 18
+lines: 261
 
-repository: https://github.com/kehitysto/coaching-chatbot
-issues: 27
+repository: https://github.com/jawil/blog
+issues: 7
+commits: 46
+lines: 39
 
-repository: https://github.com/MikhailLU/cinema-sync
-issues: 2
+repository: https://github.com/google/python-fire
+issues: 13
+commits: 21
+lines: 5852
 
-repository: https://github.com/robinpokorny/git3moji
+repository: https://github.com/gutentags/system
 issues: 4
+commits: 48
+lines: 3643
 
-repository: https://github.com/marcbruederlin/particles.js
+repository: https://github.com/spring-cloud-stream-app-starters/aggregate-counter
+issues: 2
+commits: 37
+lines: 1471
+
+repository: https://github.com/the-virtual-brain/tvb-library
 issues: 1
+commits: 0
+lines: 0
 
-repository: https://github.com/elBukkit/MagicPlugin
-issues: 5
+repository: https://github.com/iHabitat/special.ihabitat.com
+issues: 38
+commits: 28
+lines: 500
+
+repository: https://github.com/sinyoung550/Widgetproperties0320
+issues: 1
+commits: 3
+lines: 756

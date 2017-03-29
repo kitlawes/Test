@@ -366,7 +366,8 @@ public class GithubData {
             int linesForCommit = 0;
             while ((line = reader.readLine()) != null) {
                 
-                if (line.contains(" parent")) {
+                if (line.contains("<span class=\"sha-block\" data-pjax>")) {
+                    line = reader.readLine();
                     int beginIndex = "        ".length();
                     int endIndex = line.indexOf(" parent");
                     String substring = line.substring(beginIndex, endIndex);

@@ -1,76 +1,186 @@
 Repositories with at least 1 issue, at most 200 commits, and at most 10000 lines of code
 
-repository: https://github.com/types/npm-bluebird
-issues: 1
-commits: 68
-lines: 1932
-
-repository: https://github.com/ThemeBoy/SportsPress-for-Baseball
-issues: 1
-commits: 14
-lines: 5292
-
-repository: https://github.com/mcneel/MOVED-rhinoscript
+repository: https://github.com/TwoBigPaws/FuelCalculator
 issues: 6
-commits: 87
-lines: 969
+commits: 18
+lines: 214
 
-repository: https://github.com/zzzprojects/Bulk-Operations
+repository: https://github.com/dashiwa/booking_calendar
+issues: 1
+commits: 26
+lines: 2710
+
+repository: https://github.com/debedb/kabuta
 issues: 3
-commits: 65
-lines: 172
+commits: 5
+lines: 1598
 
-repository: https://github.com/LCWE/Teat1
+repository: https://github.com/CCNYSmartCane/SmartCane-Tango
+issues: 6
+commits: 68
+lines: 7251
+
+repository: https://github.com/timbru31/mp3lyrics
+issues: 3
+commits: 100
+lines: 884
+
+repository: https://github.com/ArtiomL/f5-app-connector
+issues: 2
+commits: 79
+lines: 1223
+
+repository: https://github.com/markobarleben/slack-newspipe
 issues: 1
-commits: 4
-lines: 2
+commits: 142
+lines: 5841
 
-repository: https://github.com/Bouke/NetService
-issues: 5
-commits: 45
-lines: 1297
-
-repository: https://github.com/freakdesign/shopifyFD
+repository: https://github.com/zk-phi/CHUNITHMRateAnalyzer
 issues: 9
-commits: 147
-lines: 4584
-
-repository: https://github.com/uranum/yii2-delivery-calculator
-issues: 1
-commits: 14
-lines: 8548
-
-repository: https://github.com/apache/sling
-issues: 45
-commits: 0
+commits: 7
 lines: 0
 
-repository: https://github.com/opengisch/projectgenerator
-issues: 8
-commits: 53
-lines: 4797
-
-repository: https://github.com/sunnych0214/EditTextText1
+repository: https://github.com/SuperAwesomeLTD/sa-adobeair-sdk
 issues: 1
-commits: 4
-lines: 1235
+commits: 88
+lines: 6435
 
-repository: https://github.com/wiepke/spiderweb
-issues: 4
-commits: 7
-lines: 572
+repository: https://github.com/Lombiq/Orchard-Watcher
+issues: 2
+commits: 41
+lines: 1014
+
+repository: https://github.com/krakphp/job
+issues: 1
+commits: 17
+lines: 3236
+
+repository: https://github.com/ronsc/schedule2
+issues: 8
+commits: 3
+lines: 1115
+
+repository: https://github.com/GroupI/Group-I-project
+issues: 14
+commits: 25
+lines: 769
+
+repository: https://github.com/katagatame/Ganymede
+issues: 5
+commits: 32
+lines: 1893
+
+repository: https://github.com/radify/collimator
+issues: 2
+commits: 103
+lines: 2759
+
+repository: https://github.com/cljs/tool
+issues: 5
+commits: 41
+lines: 3485
+
+repository: https://github.com/canonical-websites/conjure-up.io
+issues: 1
+commits: 41
+lines: 2191
 
 repository: https://github.com/coderadi/ToDo
 issues: 2
 commits: 6
 lines: 336
 
-repository: https://github.com/Landoop/fast-data-dev
-issues: 4
-commits: 168
-lines: 3203
+repository: https://github.com/ohgamja3/readinglist-web-admin
+issues: 1
+commits: 5
+lines: 1347
 
-repository: https://github.com/MozillaSecurity/avalanche
+repository: https://github.com/plone/buildout.coredev
+issues: 6
+commits: 0
+lines: 0
+
+repository: https://github.com/perrich/sepawriter
+issues: 1
+commits: 47
+lines: 7310
+
+repository: https://github.com/No-Agenda/torrent-archive
+issues: 1
+commits: 109
+lines: 2175
+
+repository: https://github.com/soichih/sca-auth
+issues: 9
+commits: 187
+lines: 9740
+
+repository: https://github.com/apache/spark-website
 issues: 4
-commits: 84
-lines: 3336
+commits: 0
+lines: 0
+
+repository: https://github.com/mattdesl/google-panorama-equirectangular
+issues: 5
+commits: 45
+lines: 887
+
+repository: https://github.com/htmlacademy/eslint-config-htmlacademy
+issues: 1
+commits: 56
+lines: 645
+
+repository: https://github.com/ferrarimarco/home-lab
+issues: 2
+commits: 1
+lines: 23
+
+repository: https://github.com/MoKee/android_frameworks_base
+issues: 4
+commits: 0
+lines: 0
+
+repository: https://github.com/haxetink/tink_unittest
+issues: 1
+commits: 48
+lines: 892
+
+repository: https://github.com/chef/omnibus-ctl
+issues: 6
+commits: 122
+lines: 3842
+
+repository: https://github.com/snipsco/dinghy
+issues: 3
+commits: 92
+lines: 2640
+
+repository: https://github.com/titarenko/butcher
+issues: 5
+commits: 43
+lines: 7564
+
+repository: https://github.com/ITNano/WikiSubtitleReader
+issues: 3
+commits: 21
+lines: 1498
+
+repository: https://github.com/robinpokorny/git3moji
+issues: 4
+commits: 25
+lines: 1091
+
+repository: https://github.com/JinmiaoChenLab/cytofkit
+issues: 3
+commits: 3
+lines: 7433
+
+repository: https://github.com/jzse/reactjs-tictactoe
+issues: 1
+commits: 12
+lines: 398
+
+repository: https://github.com/sinyoung550/Widgetproperties0320
+issues: 1
+commits: 3
+lines: 756
