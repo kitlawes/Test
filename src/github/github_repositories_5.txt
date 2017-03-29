@@ -1,0 +1,186 @@
+Repositories with at least 1 issue, at most 200 commits, and at most 10000 lines of code
+
+repository: https://github.com/songjein/AsterixDB_Web_Console
+issues: 8
+commits: 76
+lines: 2298
+
+repository: https://github.com/elierotenberg/react-nexus
+issues: 2
+commits: 75
+lines: 6013
+
+repository: https://github.com/bigxodus/candlelight
+issues: 7
+commits: 59
+lines: 2939
+
+repository: https://github.com/Duckers/WeatherTodo
+issues: 13
+commits: 97
+lines: 3594
+
+repository: https://github.com/Nebo15/ehealth.api
+issues: 3
+commits: 58
+lines: 1734
+
+repository: https://github.com/pixiephreak/GWCB_project-1
+issues: 9
+commits: 28
+lines: 1208
+
+repository: https://github.com/bitwarden/cli
+issues: 1
+commits: 0
+lines: 0
+
+repository: https://github.com/jokeyrhyme/is-dom4-supported
+issues: 1
+commits: 35
+lines: 2213
+
+repository: https://github.com/wifeofvillon/tokatonton
+issues: 1
+commits: 27
+lines: 2195
+
+repository: https://github.com/claymccoy/reactionTest
+issues: 2
+commits: 0
+lines: 0
+
+repository: https://github.com/ZabuzaW/Sparkle
+issues: 1
+commits: 31
+lines: 7843
+
+repository: https://github.com/carono/yii2-rbac
+issues: 1
+commits: 25
+lines: 1736
+
+repository: https://github.com/kazupon/vue-node-boilerplate
+issues: 2
+commits: 13
+lines: 5910
+
+repository: https://github.com/canonical-websites/conjure-up.io
+issues: 1
+commits: 41
+lines: 2191
+
+repository: https://github.com/guillaumev/drupdate
+issues: 1
+commits: 17
+lines: 964
+
+repository: https://github.com/brendaniel/manifesto
+issues: 1
+commits: 53
+lines: 1288
+
+repository: https://github.com/Floern/stackoverflow
+issues: 2
+commits: 25
+lines: 718
+
+repository: https://github.com/Komodo/komodo-go
+issues: 3
+commits: 81
+lines: 2120
+
+repository: https://github.com/gus3000/DDLarbin
+issues: 1
+commits: 3
+lines: 717
+
+repository: https://github.com/dallasrb/dallasrb.github.io
+issues: 4
+commits: 38
+lines: 954
+
+repository: https://github.com/Holmistr/jirafa-jenkins-plugin
+issues: 1
+commits: 6
+lines: 1738
+
+repository: https://github.com/NINAnor/NOFAInsert
+issues: 6
+commits: 65
+lines: 7429
+
+repository: https://github.com/MaitriMehta/TipCalculator
+issues: 1
+commits: 18
+lines: 1375
+
+repository: https://github.com/ConSol/omd
+issues: 2
+commits: 0
+lines: 0
+
+repository: https://github.com/suredone/qdone
+issues: 4
+commits: 25
+lines: 2211
+
+repository: https://github.com/apache/spark-website
+issues: 4
+commits: 0
+lines: 0
+
+repository: https://github.com/cvgellhorn/SlimFit
+issues: 3
+commits: 188
+lines: 2289
+
+repository: https://github.com/LeonardoRiselli/esame_parte_I
+issues: 1
+commits: 2
+lines: 8
+
+repository: https://github.com/vdsabev/image-downloader
+issues: 7
+commits: 79
+lines: 1511
+
+repository: https://github.com/ryym/vim-riot
+issues: 1
+commits: 18
+lines: 261
+
+repository: https://github.com/jawil/blog
+issues: 7
+commits: 46
+lines: 39
+
+repository: https://github.com/google/python-fire
+issues: 13
+commits: 21
+lines: 5852
+
+repository: https://github.com/gutentags/system
+issues: 4
+commits: 48
+lines: 3643
+
+repository: https://github.com/spring-cloud-stream-app-starters/aggregate-counter
+issues: 2
+commits: 37
+lines: 1471
+
+repository: https://github.com/the-virtual-brain/tvb-library
+issues: 1
+commits: 0
+lines: 0
+
+repository: https://github.com/iHabitat/special.ihabitat.com
+issues: 38
+commits: 28
+lines: 500
+
+repository: https://github.com/sinyoung550/Widgetproperties0320
+issues: 1
+commits: 3
+lines: 756

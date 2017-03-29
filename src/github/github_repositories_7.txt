@@ -1,0 +1,221 @@
+Repositories with at least 1 issue, at most 200 commits, and at most 10000 lines of code
+
+repository: https://github.com/21011996/Stock-exchange
+issues: 1
+commits: 10
+lines: 280
+
+repository: https://github.com/nathangrove/ng2-snow
+issues: 2
+commits: 19
+lines: 1447
+
+repository: https://github.com/jelmerdemaat/livepoll
+issues: 1
+commits: 41
+lines: 3817
+
+repository: https://github.com/KonektOU/estonian-banklinks-for-woocommerce
+issues: 1
+commits: 80
+lines: 2910
+
+repository: https://github.com/danielgamage/font-dashboard
+issues: 6
+commits: 180
+lines: 9340
+
+repository: https://github.com/INFURA/quorum-tools
+issues: 4
+commits: 5
+lines: 1282
+
+repository: https://github.com/suhayl22/CodePath-CalTip
+issues: 1
+commits: 10
+lines: 1353
+
+repository: https://github.com/GroupI/Group-I-project
+issues: 14
+commits: 25
+lines: 769
+
+repository: https://github.com/claymccoy/reactionTest
+issues: 2
+commits: 0
+lines: 0
+
+repository: https://github.com/ZabuzaW/Sparkle
+issues: 1
+commits: 31
+lines: 7843
+
+repository: https://github.com/uranum/yii2-delivery-calculator
+issues: 1
+commits: 14
+lines: 8548
+
+repository: https://github.com/FCCVienna/FCCVienna
+issues: 7
+commits: 45
+lines: 177
+
+repository: https://github.com/operun/operun.crm
+issues: 15
+commits: 42
+lines: 3679
+
+repository: https://github.com/sunnych0214/EditTextText1
+issues: 1
+commits: 4
+lines: 1235
+
+repository: https://github.com/zkemble/nRF905
+issues: 1
+commits: 15
+lines: 5544
+
+repository: https://github.com/bartobri/bmenu
+issues: 1
+commits: 106
+lines: 1612
+
+repository: https://github.com/ohgamja3/readinglist-web-admin
+issues: 1
+commits: 5
+lines: 1347
+
+repository: https://github.com/xogroup/toki-method-http
+issues: 1
+commits: 27
+lines: 1124
+
+repository: https://github.com/Financial-Times/next-tag-facets-api
+issues: 1
+commits: 104
+lines: 6190
+
+repository: https://github.com/bartobri/bmenu
+issues: 1
+commits: 108
+lines: 1613
+
+repository: https://github.com/gvwilson/academy-angular
+issues: 3
+commits: 95
+lines: 1888
+
+repository: https://github.com/OpenSlides/openslides-portable
+issues: 3
+commits: 52
+lines: 2060
+
+repository: https://github.com/No-Agenda/torrent-archive
+issues: 1
+commits: 109
+lines: 2175
+
+repository: https://github.com/apache/spark-website
+issues: 4
+commits: 0
+lines: 0
+
+repository: https://github.com/SOS1617/SOS1617-11
+issues: 1
+commits: 26
+lines: 1057
+
+repository: https://github.com/Lombiq/Helpful-Extensions
+issues: 3
+commits: 50
+lines: 1297
+
+repository: https://github.com/optimusprime94/CodebustersAppWMU3
+issues: 1
+commits: 41
+lines: 2528
+
+repository: https://github.com/noletreni/nodefest
+issues: 1
+commits: 48
+lines: 794
+
+repository: https://github.com/coeniebeyers/QuorumNostroDemo
+issues: 7
+commits: 56
+lines: 1201
+
+repository: https://github.com/dudeyoudontknow/dudeyoudontknow.github.io
+issues: 1
+commits: 103
+lines: 382
+
+repository: https://github.com/praekelt/molo-freebasics
+issues: 6
+commits: 1
+lines: 2
+
+repository: https://github.com/oluchia/byteme
+issues: 3
+commits: 20
+lines: 2097
+
+repository: https://github.com/superioq26/qcm
+issues: 1
+commits: 1
+lines: 34
+
+repository: https://github.com/YunoHost-Apps/etherpad_mypads_ynh
+issues: 1
+commits: 28
+lines: 2401
+
+repository: https://github.com/t333169/first-repository
+issues: 1
+commits: 13
+lines: 9
+
+repository: https://github.com/docwhite/lacabra
+issues: 3
+commits: 6
+lines: 385
+
+repository: https://github.com/aristotle-mdr/user-documentation
+issues: 6
+commits: 18
+lines: 2725
+
+repository: https://github.com/martinswiderski/valdi
+issues: 3
+commits: 111
+lines: -532450
+
+repository: https://github.com/edysegura/css-exercises
+issues: 2
+commits: 2
+lines: 64
+
+repository: https://github.com/MikhailLU/cinema-sync
+issues: 2
+commits: 35
+lines: 8458
+
+repository: https://github.com/robinpokorny/git3moji
+issues: 4
+commits: 25
+lines: 1091
+
+repository: https://github.com/marcbruederlin/particles.js
+issues: 1
+commits: 38
+lines: 1446
+
+repository: https://github.com/JinmiaoChenLab/cytofkit
+issues: 3
+commits: 3
+lines: 7433
+
+repository: https://github.com/veswill3/micro-manage-timer
+issues: 4
+commits: 4
+lines: 407

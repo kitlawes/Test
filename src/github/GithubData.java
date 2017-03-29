@@ -294,7 +294,7 @@ public class GithubData {
                     int beginIndex = line.indexOf("<span class=\"counter\">") + "<span class=\"counter\">".length();
                     int endIndex = line.indexOf("</span>");
                     String substring = line.substring(beginIndex, endIndex);
-                    int issues = Integer.parseInt(substring);
+                    int issues = Integer.parseInt(substring.replace(",", ""));
                     return issues;
                 }
             }
@@ -365,6 +365,17 @@ public class GithubData {
             String line;
             int linesForCommit = 0;
             while ((line = reader.readLine()) != null) {
+                
+                if (line.contains(" parent")) {
+                    int beginIndex = "        ".length();
+                    int endIndex = line.indexOf(" parent");
+                    String substring = line.substring(beginIndex, endIndex);
+                    int parents = Integer.parseInt(substring);
+                    if (parents > 1) {
+                        return 0;
+                    }
+                }
+                
                 linesForCommit += getLinesForLine(line, "addition");
                 linesForCommit += getLinesForLine(line, "additions");
                 linesForCommit -= getLinesForLine(line, "deletion");
@@ -372,6 +383,7 @@ public class GithubData {
                 if (line.contains(" deletion</strong>") || line.contains(" deletions</strong>")) {
                     return linesForCommit;
                 }
+                
             }
         } catch (MalformedURLException e) {
             sleepForTenSeconds();

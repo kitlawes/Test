@@ -12,7 +12,7 @@ src/github/
     * Finds repositories with a minimum number of issues, a maximum number of commits, a maximum number of lines of code
 * github\_topics.txt - The topics of repositories that have at least 1,000 stars and have most recently been updated
 * github\_popularity.txt - The topics in github\_topics.txt ordered by how many repositories have used each topic
-* github\_repositories\_[n].txt - Repositories with at least 1 issue, at most 200 commits, and at most 10,000 lines of code
+* github\_repositories\_[n].txt - Repositories with specific characteristics
 
 src/stack/overflow/
 

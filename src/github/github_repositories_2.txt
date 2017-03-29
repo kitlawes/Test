@@ -1,3 +1,5 @@
+Repositories with at least 1 issue, at most 200 commits, and at most 10000 lines of code
+
 repository: https://github.com/chimericdream/node-toodledo
 issues: 3
 commits: 50

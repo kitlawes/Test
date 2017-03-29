@@ -1,0 +1,247 @@
+Repositories with at least 1 issue
+
+repository: https://github.com/randsleadershipslack/statistics
+issues: 2
+
+repository: https://github.com/theforeman/foreman_remote_execution
+issues: 8
+
+repository: https://github.com/keum/data_display
+issues: 1
+
+repository: https://github.com/WGNHS/LSLC-Web-App
+issues: 9
+
+repository: https://github.com/vertebrae-org/node-cassandra
+issues: 5
+
+repository: https://github.com/ieer/projector-rpi-web-service
+issues: 3
+
+repository: https://github.com/wunderkraut/WunderTools
+issues: 21
+
+repository: https://github.com/korcankaraokcu/PINCE
+issues: 9
+
+repository: https://github.com/maggu2810/maggu2810-overlay
+issues: 1
+
+repository: https://github.com/magne4000/quassel-webserver
+issues: 16
+
+repository: https://github.com/openSUSE/software-o-o
+issues: 28
+
+repository: https://github.com/zalando-incubator/flatjson
+issues: 1
+
+repository: https://github.com/redbrick/eduScripts
+issues: 1
+
+repository: https://github.com/origamicomet/yeti
+issues: 32
+
+repository: https://github.com/mylhyl/AndroidSuperDialog
+issues: 2
+
+repository: https://github.com/rilwis/meta-box
+issues: 56
+
+repository: https://github.com/zachgarwood/elixir-amazon-product-advertising-client
+issues: 1
+
+repository: https://github.com/infobloxopen/policy-box
+issues: 1
+
+repository: https://github.com/easylist/easylist
+issues: 79
+
+repository: https://github.com/OpenGamePanel/OGP-Website
+issues: 1
+
+repository: https://github.com/BakermanLP/ProjectRET-AoT
+issues: 24
+
+repository: https://github.com/ax5ui/ax5ui-kernel
+issues: 2
+
+repository: https://github.com/uranum/yii2-delivery-calculator
+issues: 1
+
+repository: https://github.com/Bedework/bw-carddav
+issues: 1
+
+repository: https://github.com/bashalex/datapot
+issues: 1
+
+repository: https://github.com/subutai-io/jenkins-config
+issues: 1
+
+repository: https://github.com/ongr-io/TranslationsBundle
+issues: 10
+
+repository: https://github.com/cocos-creator/engine
+issues: 21
+
+repository: https://github.com/mekatronik-achmadi/my_example
+issues: 1
+
+repository: https://github.com/nidium/Nidium
+issues: 19
+
+repository: https://github.com/okuoku/yunibase
+issues: 17
+
+repository: https://github.com/cu-mkp/GR8975
+issues: 38
+
+repository: https://github.com/qloog/laravel5-backend
+issues: 8
+
+repository: https://github.com/sunnych0214/EditTextText1
+issues: 1
+
+repository: https://github.com/phillymesh/cjdns-optimizations
+issues: 2
+
+repository: https://github.com/RallyCommunity/PSITrackingApp
+issues: 13
+
+repository: https://github.com/Voog/design-rotterdam
+issues: 38
+
+repository: https://github.com/hyrise/hyrise
+issues: 60
+
+repository: https://github.com/fabiovalse/KGUI
+issues: 8
+
+repository: https://github.com/AJNOURI/COA
+issues: 17
+
+repository: https://github.com/mekatronik-achmadi/my_example
+issues: 1
+
+repository: https://github.com/takezoe/golc
+issues: 3
+
+repository: https://github.com/binarymaster/3WiFi
+issues: 2
+
+repository: https://github.com/parapluu/nifty
+issues: 1
+
+repository: https://github.com/pacifica/pacifica-cartd
+issues: 1
+
+repository: https://github.com/openXsensor/openXsensor
+issues: 2
+
+repository: https://github.com/mekatronik-achmadi/my_example
+issues: 1
+
+repository: https://github.com/OpenSecEd/usability
+issues: 7
+
+repository: https://github.com/OpenSecEd/trustcomp
+issues: 7
+
+repository: https://github.com/cloudfoundry/bosh-deployment
+issues: 5
+
+repository: https://github.com/CaptainPotatoes/EEG_ADS1299_Firmware
+issues: 2
+
+repository: https://github.com/amite/arc
+issues: 9
+
+repository: https://github.com/yunwuxin/think-notification
+issues: 1
+
+repository: https://github.com/rainwoodman/pmesh
+issues: 2
+
+repository: https://github.com/PeterTillema/ICE
+issues: 3
+
+repository: https://github.com/AnyMarket/magento
+issues: 2
+
+repository: https://github.com/natsnudasoft/RgbLedSequencer
+issues: 1
+
+repository: https://github.com/LiskHQ/lisk-docker
+issues: 1
+
+repository: https://github.com/shubham9411/autonomous
+issues: 6
+
+repository: https://github.com/GreyWolfDev/Werewolf
+issues: 16
+
+repository: https://github.com/scaleway/image-tools
+issues: 19
+
+repository: https://github.com/praekelt/molo-freebasics
+issues: 6
+
+repository: https://github.com/pangudashu/php7-internal
+issues: 2
+
+repository: https://github.com/rdfio/RDFIO
+issues: 6
+
+repository: https://github.com/synapse-studio/synhelper
+issues: 1
+
+repository: https://github.com/open-mpi/hwloc
+issues: 76
+
+repository: https://github.com/joereddington/Vision
+issues: 4
+
+repository: https://github.com/apazureck/openui5vscodeTypescriptTools
+issues: 13
+
+repository: https://github.com/jvns/jvns.ca
+issues: 1
+
+repository: https://github.com/adsamcik/Signals-android
+issues: 14
+
+repository: https://github.com/ITNano/WikiSubtitleReader
+issues: 3
+
+repository: https://github.com/imsweb/data-generator
+issues: 2
+
+repository: https://github.com/forkinthecode/snitchhunt
+issues: 2
+
+repository: https://github.com/hfreire/pollmommy
+issues: 1
+
+repository: https://github.com/mibuthu/wp-event-list
+issues: 35
+
+repository: https://github.com/nkinsky/ImageCamp
+issues: 7
+
+repository: https://github.com/Osspial/derin-rs
+issues: 1
+
+repository: https://github.com/kehitysto/coaching-chatbot
+issues: 27
+
+repository: https://github.com/MikhailLU/cinema-sync
+issues: 2
+
+repository: https://github.com/robinpokorny/git3moji
+issues: 4
+
+repository: https://github.com/marcbruederlin/particles.js
+issues: 1
+
+repository: https://github.com/elBukkit/MagicPlugin
+issues: 5
