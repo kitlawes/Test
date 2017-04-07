@@ -2,6 +2,7 @@ package github;
 
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import org.apache.commons.lang3.StringUtils;
 import org.json.JSONObject;
 
 import java.io.*;
@@ -19,8 +20,8 @@ public class GithubData {
 //        orderTopicsByPopularity();
 
         // Methods for finding repositories with specific characteristics
-//        printRepositoriesWithMinIssues(1);
-        printRepositoriesWithMinIssuesMaxCommitsMaxLines(1, 200, 10000);
+        printRepositoriesWithMinIssuesMaxCommits(1, 200);
+//        printRepositoriesWithMinIssuesMaxCommitsMaxLines(1, 200, 10000);
 
     }
 
@@ -216,14 +217,16 @@ public class GithubData {
         }
     }
 
-    static void printRepositoriesWithMinIssues(int minIssues) {
+    static void printRepositoriesWithMinIssuesMaxCommits(int minIssues, int maxCommits) {
         for (int page = 1; page <= 100; page++) {
             List<String> repositoryUrls = getRepositoryUrlsForPage(page);
             for (String repositoryUrl : repositoryUrls) {
-                int issues = getIssuesForRepository(repositoryUrl);
-                if (issues >= minIssues) {
+                int issueAmount = getIssueAmountForRepository(repositoryUrl);
+                int commitAmount = getCommitAmountForRepository(repositoryUrl);
+                if (issueAmount >= minIssues && commitAmount <= maxCommits) {
                     System.out.println("repository: " + repositoryUrl);
-                    System.out.println("issues: " + issues);
+                    System.out.println("issues: " + issueAmount);
+                    System.out.println("commits: " + commitAmount);
                     System.out.println();
                 }
             }
@@ -234,17 +237,17 @@ public class GithubData {
         for (int page = 1; page <= 100; page++) {
             List<String> repositoryUrls = getRepositoryUrlsForPage(page);
             for (String repositoryUrl : repositoryUrls) {
-                int issues = getIssuesForRepository(repositoryUrl);
+                int issueAmount = getIssueAmountForRepository(repositoryUrl);
 //                System.out.println("repository: " + repositoryUrl);
-//                System.out.println("issues: " + issues);
-                if (issues >= minIssues) {
+//                System.out.println("issues: " + issueAmount);
+                if (issueAmount >= minIssues) {
                     List<String> commits = getCommitsForRepository(repositoryUrl, maxCommits);
                     if (commits.size() <= maxCommits) {
 //                        System.out.println("commits: " + commits.size());
                         int lines = getLinesForRepository(repositoryUrl, commits, maxLines);
                         if (lines <= maxLines) {
                             System.out.println("repository: " + repositoryUrl);
-                            System.out.println("issues: " + issues);
+                            System.out.println("issues: " + issueAmount);
                             System.out.println("commits: " + commits.size());
                             System.out.println("lines: " + lines);
                             System.out.println();
@@ -284,7 +287,7 @@ public class GithubData {
         return repositoryUrls;
     }
 
-    static int getIssuesForRepository(String repositoryUrl) {
+    static int getIssueAmountForRepository(String repositoryUrl) {
         try {
             URL url = new URL(repositoryUrl);
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
@@ -294,8 +297,33 @@ public class GithubData {
                     int beginIndex = line.indexOf("<span class=\"counter\">") + "<span class=\"counter\">".length();
                     int endIndex = line.indexOf("</span>");
                     String substring = line.substring(beginIndex, endIndex);
-                    int issues = Integer.parseInt(substring.replace(",", ""));
-                    return issues;
+                    int issueAmount = Integer.parseInt(substring.replace(",", ""));
+                    return issueAmount;
+                }
+            }
+        } catch (MalformedURLException e) {
+            sleepForTenSeconds();
+        } catch (UnsupportedEncodingException e) {
+            sleepForTenSeconds();
+        } catch (IOException e) {
+            sleepForTenSeconds();
+        }
+        return 0;
+    }
+
+    static int getCommitAmountForRepository(String repositoryUrl) {
+        try {
+            URL url = new URL(repositoryUrl);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (StringUtils.isNumeric(line.trim().replace(",", ""))) {
+                    reader.readLine();
+                    String subsequentLine = reader.readLine();
+                    if (subsequentLine.equals("            commits")) {
+                        int commitAmount = Integer.parseInt(line.trim().replace(",", ""));
+                        return commitAmount;
+                    }
                 }
             }
         } catch (MalformedURLException e) {
