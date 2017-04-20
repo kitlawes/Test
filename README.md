@@ -8,8 +8,8 @@ src/github/
     * Finds the topics of repositories that have at least 1,000 stars and have most recently been updated
     * Finds how many repositories have used each topic, and orders the topics based on this
   * Finds GitHub repositories with specific characteristics
-    * Finds repositories with a minimum number of issues
-    * Finds repositories with a minimum number of issues, a maximum number of commits, a maximum number of lines of code
+    * Finds repositories with a minimum number of issues, and a maximum number of commits
+    * Finds repositories with a minimum number of issues, a maximum number of commits, and a maximum number of lines of code
 * github\_topics.txt - The topics of repositories that have at least 1,000 stars and have most recently been updated
 * github\_popularity.txt - The topics in github\_topics.txt ordered by how many repositories have used each topic
 * github\_repositories\_[n].txt - Repositories with specific characteristics
