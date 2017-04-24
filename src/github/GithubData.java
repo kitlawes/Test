@@ -20,8 +20,8 @@ public class GithubData {
 //        orderTopicsByPopularity();
 
         // Methods for finding repositories with specific characteristics
-        printRepositoriesWithMinIssuesMaxCommits(1, 200);
-//        printRepositoriesWithMinIssuesMaxCommitsMaxLines(1, 200, 10000);
+//        printRepositoriesWithMinIssuesMaxCommits(1, 200);
+        printRepositoriesWithMinIssuesMaxCommitsMaxLines(1, 200, 10000);
 
     }
 
@@ -293,8 +293,8 @@ public class GithubData {
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"));
             String line;
             while ((line = reader.readLine()) != null) {
-                if (line.contains("<span class=\"counter\">")) {
-                    int beginIndex = line.indexOf("<span class=\"counter\">") + "<span class=\"counter\">".length();
+                if (line.contains("<span class=\"Counter\">")) {
+                    int beginIndex = line.indexOf("<span class=\"Counter\">") + "<span class=\"Counter\">".length();
                     int endIndex = line.indexOf("</span>");
                     String substring = line.substring(beginIndex, endIndex);
                     int issueAmount = Integer.parseInt(substring.replace(",", ""));
